@@ -1,5 +1,28 @@
-# Practica_laboratorio
 # Mercado Local
+
+## Ejecutar con XAMPP
+
+1. Copia la carpeta `Practica_laboratorio` a `C:\xampp\htdocs\mercado-local`.
+2. Inicia **Apache** desde el panel de control de XAMPP.
+3. Abre `http://localhost/mercado-local/` en el navegador.
+
+No requiere instalar dependencias ni una base de datos: es una aplicación HTML5, CSS3 y JavaScript vanilla. El carrito y el último pedido se conservan en el navegador mediante `localStorage`.
+
+### Flujo disponible
+
+- Inicio y búsqueda de productos.
+- Catálogo con filtros por categoría.
+- Ficha de producto y selección de cantidad.
+- Carrito con subtotal, entrega y total claros.
+- Pago con etiquetas, validación accesible y revisión sin cargo.
+- Confirmación de pedido y perfil con preferencias de texto y alto contraste.
+
+### Verificación rápida de accesibilidad
+
+- Navega con `Tab`, activa controles con `Enter` o `Espacio`, usa `Esc` para volver desde detalle o pago y revisa el foco dorado visible.
+- Prueba los formularios de pago vacíos: cada campo muestra un error asociado.
+- Comprueba 320 px, 768 px y 1024 px desde las herramientas responsivas del navegador.
+- Las imágenes de producto llevan texto alternativo significativo y los mensajes de carrito y pedido usan regiones `aria-live`.
 
 Proyecto de práctica para diseñar e implementar una plataforma de comercio electrónico local centrada en el usuario. La aplicación permite descubrir productos de productores cercanos, revisar su origen y disponibilidad, agregarlos al carrito, revisar el pago y consultar el estado del pedido.
 
@@ -9,7 +32,7 @@ El flujo de compra y el sistema visual están disponibles en Figma:
 
 - [Abrir prototipo Mercado Local](https://www.figma.com/design/wYxdWWhVCHk0f7YSDf7Vnt)
 
-El archivo incluye componentes editables, tokens de color, indicadores de foco visible y siete pantallas móviles enlazadas:
+El archivo incluye componentes editables, tokens de color, indicadores de foco visible y el flujo de compra trasladado a escritorio para esta implementación web:
 
 1. Inicio
 2. Explorar productos
@@ -31,8 +54,8 @@ La aplicación está dirigida a personas adultas que compran alimentos para su h
 
 | Persona | Necesidad | Barreras a validar |
 | --- | --- | --- |
-| Pedro, 32 años, compra semanal | Comprar desde el móvil en menos de diez minutos | Catálogos extensos y costos tardíos |
-| Gael, 58 años, comprador ocasional | Leer con comodidad y confiar en el pedido | Texto pequeño, mensajes poco visibles y controles difíciles de pulsar |
+| Ana, 32 años, compra semanal | Comprar desde el móvil en menos de diez minutos | Catálogos extensos y costos tardíos |
+| Luis, 58 años, comprador de barrio | Leer con comodidad y confiar en el pedido | Texto pequeño, mensajes poco visibles y controles difíciles de pulsar |
 
 Estas personas son hipótesis de diseño. Deben validarse con entrevistas y observación contextual antes de presentarlas como hallazgos de investigación.
 
