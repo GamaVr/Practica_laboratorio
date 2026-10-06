@@ -31,8 +31,8 @@ La aplicación está dirigida a personas adultas que compran alimentos para su h
 
 | Persona | Necesidad | Barreras a validar |
 | --- | --- | --- |
-| Ana, 32 años, compra semanal | Comprar desde el móvil en menos de diez minutos | Catálogos extensos y costos tardíos |
-| Luis, 58 años, comprador de barrio | Leer con comodidad y confiar en el pedido | Texto pequeño, mensajes poco visibles y controles difíciles de pulsar |
+| Pedro, 32 años, compra semanal | Comprar desde el móvil en menos de diez minutos | Catálogos extensos y costos tardíos |
+| Gael, 58 años, comprador ocasional | Leer con comodidad y confiar en el pedido | Texto pequeño, mensajes poco visibles y controles difíciles de pulsar |
 
 Estas personas son hipótesis de diseño. Deben validarse con entrevistas y observación contextual antes de presentarlas como hallazgos de investigación.
 
@@ -113,17 +113,6 @@ Se deben realizar al menos cinco sesiones de usabilidad con personas externas al
 | Esfuerzo cognitivo | No aplica en esta práctica |
 
 La evaluación de accesibilidad debe combinar WAVE, axe DevTools, Lighthouse y pruebas manuales de teclado, zoom al 200 % y lector de pantalla.
-
-## Estado del proyecto
-
-- [x] Prototipo de alta fidelidad en Figma.
-- [x] Sistema visual con componentes reutilizables y foco visible.
-- [x] Requisitos, tareas críticas, protocolo de pruebas y checklist de accesibilidad documentados.
-- [ ] Implementación funcional en HTML, CSS y JavaScript.
-- [ ] Pruebas de usabilidad con cinco participantes reales.
-- [ ] Auditoría automática y manual de accesibilidad.
-- [ ] URL desplegada.
-- [ ] Video demostrativo de 3 a 5 minutos.
 
 ## Backlog priorizado
 
