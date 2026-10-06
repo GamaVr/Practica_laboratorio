@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" role="img" aria-labelledby="title desc">
-  <title id="title">Productos frescos de Mercado Local</title>
-  <desc id="desc">Ilustración de hojas verdes, una miel y pan artesanal sobre un fondo claro.</desc>
-  <rect width="480" height="280" rx="32" fill="#E2F4EB"/>
-  <circle cx="96" cy="151" r="57" fill="#86BC57"/><path d="M48 151c38-83 93-63 105-14-44 24-76 40-105 14Z" fill="#438A45"/>
-  <path d="M107 90c4 54-13 95-45 127" fill="none" stroke="#E9F7D6" stroke-width="8" stroke-linecap="round"/>
-  <rect x="214" y="93" width="84" height="113" rx="20" fill="#D99A32"/><rect x="220" y="83" width="72" height="30" rx="12" fill="#6E4A24"/><path d="M227 131h58M227 160h58M227 188h58" stroke="#FFE9AC" stroke-width="8" stroke-linecap="round"/>
-  <path d="M344 193c-10-55 20-101 67-101 47 0 77 46 67 101Z" fill="#C68250"/><path d="M357 144c19-25 43-25 57 0M374 116c15-19 31-19 45 0" fill="none" stroke="#F4D498" stroke-width="8" stroke-linecap="round"/>
-</svg>
