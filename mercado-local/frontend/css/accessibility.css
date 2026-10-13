@@ -1,0 +1,118 @@
+/* Foco, mensajes y preferencias de lectura para WCAG AA. */
+
+/* Indicador de foco suficiente para teclado y lectores con baja visión. */
+:focus-visible{
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+/* Al cambiar de vista se enfoca la región principal para lectores de pantalla.
+   El indicador visual se conserva en enlaces, botones y campos interactivos. */
+#main-content:focus-visible{
+  outline: none;
+}
+/* Enlace de salto: aparece únicamente cuando recibe foco. */
+.skip-link{
+  position: fixed;
+  z-index: 20;
+  top: 8px;
+  left: 8px;
+  padding: 10px 14px;
+  color: var(--ink);
+  background: var(--panel);
+  transform: translateY(-150%);
+}
+.skip-link:focus{
+  transform: translateY(0);
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+/* Aviso visual que complementa las regiones aria-live del HTML. */
+.toast-message{
+  position: fixed;
+  z-index: 30;
+  right: 24px;
+  bottom: 24px;
+  max-width: min(420px, calc(100vw - 32px));
+  padding: 16px 20px;
+  color: var(--on-success);
+  background: var(--success);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  font-weight: 700;
+}
+/* Preferencias que activa la persona usuaria desde Opciones. */
+.large-text{
+  font-size: 118%;
+}
+.high-contrast{
+  --ink: #000;
+  --muted: #23342d;
+  --brand: #00523f;
+  --brand-dark: #003b2e;
+  --eyebrow: #00523f;
+  --surface: #fff;
+  --line: #587067;
+}
+/* Cada color cumple una función: enlaces, botones, banner y superficies.
+   El texto de los botones se oscurece al usar el verde claro del tema oscuro. */
+.dark-mode{
+  color-scheme: dark;
+  --ink: #edf7f1;
+  --muted: #bdcbc4;
+  --brand: #4dca9f;
+  --brand-dark: #71ddb5;
+  --brand-soft: #1b3a2f;
+  --on-brand: #08261a;
+  --hero-bg: #164a38;
+  --hero-text: #f4fff9;
+  --hero-muted: #cce9db;
+  --panel-soft: #1c2e25;
+  --sidebar-bg: #1a2a22;
+  --header-bg: rgba(24,35,30,.97);
+  --nav-text: #d9e7e0;
+  --input-line: #6f8b7d;
+  --placeholder: #b3c7bb;
+  --eyebrow: #89dfb9;
+  --origin-bg: #26372d;
+  --origin-text: #edf7f1;
+  --success-bg: #1b503b;
+  --success-text: #d5f8e5;
+  --error-bg: #582d2d;
+  --error-text: #ffe0e0;
+  --on-success: #08261a;
+  --gold: #ffd778;
+  --surface: #111916;
+  --panel: #18231e;
+  --line: #4b6157;
+  --danger: #ffaaaa;
+  --success: #71dcae;
+  --shadow: 0 10px 28px rgba(0,0,0,.25);
+}
+/* Alto contraste también funciona cuando el modo oscuro está activo. */
+.dark-mode.high-contrast{
+  --surface: #080e0b;
+  --panel: #111b15;
+  --panel-soft: #14271c;
+  --ink: #ffffff;
+  --muted: #e0eee5;
+  --brand: #7bf0b8;
+  --line: #8eae9b;
+  --input-line: #8eae9b;
+  --nav-text: #ffffff;
+  --placeholder: #d5e6dc;
+}
+@media (max-width: 420px){
+  .toast-message{
+    right: 16px;
+    bottom: 16px;
+  }
+}
